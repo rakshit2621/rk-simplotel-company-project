@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Simplotel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body style="margin-top:0;">
+    <nav class=" nav-flex ">
+        <button class="nav-items">Home</button>
+        <button class="nav-items">Order</button>
+        <button class="nav-items">Food</button>
+        <button class="nav-items">Restaurant</button>
+        <button class="nav-items">Testimonials</button>
+        <button class="nav-items">Contact Us</button>
+        <button class="nav-items" style="margin-right:8vmax;height:95%"><img class="nav-items" src="menu-bar.png" alt="menu-bar"></img></button>   
+        <button class="nav-menu" onClick="menuclick()" style="margin-right:8vmax;height:4vmax"><img class="nav-menu" src="menu-bar.png" alt="menu-bar"></img></button>   
+    </nav>
+    <div id="main1">
+        <div class="leftcontent">
+           <div>
+                <h1 class="mainhead">LOREM IPSUM</h1>
+                <p class="mainpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra.
+                </p>
+                <button class="mainbutton">Click Me</button>            
+            </div>
+        </div>
+        <div class="mainrightimg" ></div>
+    </div>
+    <div id="main2">
+        <div class="main2left">
+            <div class="leftimgs">
+                <div class="leftleftimg1">
+                </div>
+                <div class="leftleftimg2">
+                </div>
+            </div>
+            <div class="leftrightimg">
+            </div>
+        </div>
+        <div class="main2right">
+            <div class="main2righthead">LOREM IPSUM
+            </div>
+            <div class="main2rightmid">LOREM IPSUM
+                SET ADEMIR
+            </div>
+            <button class="main2rightbutton">Click &nbsp;<img src="icons8-arrow-30.png" alt="arrowmark"/>
+            </button>
+        </div>
+    </div>
+    <script >
+        var flag=false;
+        function menuclick(){
+            flag=!flag;
+          if(flag){        
+            document.getElementsByClassName("nav-flex")[0].classList.add("menuclickedcss3");
+          }else{ 
+           document.getElementsByClassName("nav-flex")[0].classList.remove("menuclickedcss3");
+          }
+        }
+    </script>
+  </body>
+</html>

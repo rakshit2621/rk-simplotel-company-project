@@ -1,0 +1,258 @@
+body {
+  background: linear-gradient(
+    120deg,
+    rgba(241, 219, 81, 0.5),
+    rgba(248, 105, 239, 0.5)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(252, 110, 85);
+  height: 4vmax;
+  width: 100%;
+  transition: all 1s;
+}
+.mobile {
+  top: 0;
+}
+
+.nav-items {
+  font-family: inherit;
+  letter-spacing: 0.1em;
+  background-color: inherit;
+  border: none;
+  width: auto;
+  font-size: x-large;
+  height: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav-menu {
+  font-family: inherit;
+  display: none;
+  letter-spacing: 0.1em;
+  background-color: inherit;
+  border: none;
+  width: auto;
+  font-size: x-large;
+  height: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#main1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 106vh;
+}
+
+.leftcontent {
+  width: 49vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.mainhead {
+  padding-left: 4vmax;
+  padding-right: 2vmax;
+  font-size: 3vmax;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+.mainpara {
+  padding-left: 4vmax;
+  padding-right: 5vmax;
+  font-size: large;
+  font-weight: 400;
+}
+.mainbutton {
+  margin-top: 2vmax;
+  margin-left: 4vmax;
+  font-size: large;
+  background-color: rgb(251, 102, 75);
+  height: 3vmax;
+  width: 30%;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+.mainrightimg {
+  width: 50vw;
+  height: 98vh;
+  background-image: url(./pexels-robin-stickel-70497.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#main2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 85vw;
+}
+.main2left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  width: 50%;
+}
+
+.leftimgs {
+  height: 100%;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftleftimg1 {
+  height: 48%;
+  width: 100%;
+  background-image: url(./pexels-rachel-claire-6752433.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.leftleftimg2 {
+  height: 48%;
+  width: 100%;
+  background-image: url(./pexels-eva-bronzini-6141651.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.leftrightimg {
+  height: 100%;
+  width: 46%;
+  background-image: url(./pexels-mister-mister-3434523.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main2right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 40%;
+  width: 40%;
+  background-color: rgb(252, 110, 85);
+  margin-right: 5vw;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.main2righthead {
+  padding-left: 7%;
+  font-size: large;
+  font-weight: 400;
+}
+.main2rightmid {
+  padding-left: 7%;
+  font-size: 3vmax;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.main2rightbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+}
+.nav-items:nth-child(1) {
+  margin-left: 8vmax;
+}
+@media (max-width: 1010px) {
+  #main1 {
+    flex-direction: column;
+    margin-top: 20vmax;
+  }
+  .leftcontent {
+    width: 80vw;
+  }
+  .mainbutton {
+    height: 6vmax;
+  }
+  .mainrightimg {
+    margin-top: 10vmax;
+    margin-bottom: 10vmax;
+    width: 90vw;
+  }
+  #main2 {
+    flex-direction: column;
+  }
+  .main2left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 90%;
+  }
+  .main2right {
+    margin-top: 5vmax;
+    width: 70%;
+    margin-left: 6%;
+    margin-bottom: 5vh;
+  }
+  .nav-menu {
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .nav-items:nth-last-child(1) {
+    display: none;
+  }
+  .nav-menu {
+    display: inline-block;
+  }
+  .nav-items:nth-child(1) {
+    margin-left: 0vmax;
+  }
+  .nav-flex {
+    height: 30vmax;
+    flex-direction: column;
+    top: -29%;
+  }
+}
+@media (max-width: 810px) {
+  .nav-flex {
+    top: -23%;
+  }
+}
+@media (max-width: 910px) {
+  .nav-flex {
+    top: -26%;
+  }
+}
+@media (max-width: 450px) {
+  .mainpara {
+    font-size: small;
+  }
+  .mainbutton {
+    height: 4vmax;
+    width: 50%;
+  }
+}
+
+.menuclickedcss3 {
+  top: 0%;
+}
